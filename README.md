@@ -1,31 +1,25 @@
 # nr1-field-viz
 
-> This template includes advice on how to craft a great README for your app. This template is just a starting point: feel free to change or add sections to suit your project. A few sections are standard across all projects. Don't change the text of those sections, except to customize the Explorer's Hub URL and the Contributing email alias. The standard sections are: "Open source License," "Support," "Community," "Issues / enhancement requests," and "Contributing."
-> 
-> If you need advice creating your README, ping @hero in the [#documentation](https://newrelic.slack.com/messages/documentation) channel or contact the Open Source Office. 
-> 
-> Before you publish, remove all the commments (the block quotes beginning with `>`), then follow the [standard Nerdpack README review process](https://docs.google.com/document/d/1xUg1NnNJriC0mrUE1hqcHcs5dqzyLoSYE25qjwBaWQE/edit). 
-
-![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/newrelic/{{ NERDPACK_NAME }}?include_prereleases&sort=semver) [![Snyk](https://snyk.io/test/github/newrelic/{{ NERDPACK_NAME }}/badge.svg)](https://snyk.io/test/github/newrelic/{{ NERDPACK_NAME }})
-
 ## About this Nerdpack
-
-> Write one or two short paragraphs that describe what your app does—and more importantly, why users should care. Avoid too much technical jargon: Your content should be understandable to someone who doesn't have much knowledge of New Relic's technologies. And include links to New Relic docs or other apps. 
-> 
-> For example:
 
 This application addresses a common issue faced by users when creating dashboard charts: query timeouts due to long-running queries. By using this app, users can ensure that their dashboard panels populate efficiently and reliably, avoiding the frustration of unresponsive or incomplete data visualizations.
 
-Key features include:
+### Key features include:
 
-Seamless Integration: Provides a user-friendly experience similar to what users enjoy in New Relic, making it easy to create and manage dashboard panels.
-Efficient Data Handling: Optimizes query performance to prevent timeouts, ensuring that all charts and data visualizations load correctly and promptly.
-Flexible Query Management: Allows users to handle long-running queries effectively, breaking them down into manageable parts to ensure complete data retrieval without performance issues.
+Seamless Integration: 
+- Provides a user-friendly experience similar to what users enjoy in New Relic, making it easy to create and manage dashboard panels.
+
+Efficient Data Handling: 
+- Optimizes query performance to prevent timeouts, ensuring that all charts and data visualizations load correctly and promptly.
+
+Flexible Query Management: 
+- Allows users to handle long-running queries effectively, breaking them down into manageable parts to ensure complete data retrieval without performance issues.
+
 With this app, users can build comprehensive and responsive dashboards, maintaining the quality and reliability of their data visualizations even with complex and extensive queries.
 
-![Screenshot #1](screenshots/screenshot_01.png)
-![Screenshot #2](screenshots/screenshot_02.png)
-![Screenshot #1](screenshots/screenshot_01.png)
+![Screenshot #1](/screenshot_01.png)
+![Screenshot #2](/screenshot_02.png)
+![Screenshot #1](/screenshot_01.png)
 
 ## Open source license
 
@@ -33,18 +27,21 @@ This project is distributed under the [Apache 2 license](LICENSE).
 
 ## What do you need to make this work?
 
-> List any prerequisites for using your app, and include links to other New Relic features when necessary. 
-> 
-> For example:
-
 Required:
 
-- [New Relic Infrastructure agent(s) installed](https://docs.newrelic.com/docs/agents/manage-apm-agents/installation/install-agent#infra-install) on your cloud computing devices and the related access to [New Relic One](https://newrelic.com/platform).
+- New Relic Account
+- Must be a Full or Core User in order to use and visualize NR1 Nerdpacks
 
-You'll get the best possible data out of this application if you also:
+Good to have:
 
-- [Activate the EC2 integration](https://docs.newrelic.com/docs/integrations/amazon-integrations/get-started/connect-aws-infrastructure) to group by your cloud provider account.
-- [Install APM on your applications](https://docs.newrelic.com/docs/agents/manage-apm-agents/installation/install-agent#apm-install) to group by application.
+- Experience with New Relic NRQL
+- Experience with NR1 CLI
+
+Resources 
+
+- [New Relic University](https://learn.newrelic.com/) 
+- [New Relic NRQL Docs](https://docs.newrelic.com/docs/nrql/get-started/introduction-nrql-new-relics-query-language/)
+- [New Relic Developers](https://developer.newrelic.com/build-apps/)
 
 ## Getting started
 
@@ -59,8 +56,8 @@ npm -v
 3. Execute the following command to clone this repository and run the code locally against your New Relic data:
 
 ```bash
-nr1 nerdpack:clone -r https://github.com/newrelic/{{ NERDPACK_NAME }}.git
-cd {{ NERDPACK_NAME }}
+nr1 nerdpack:clone -r https://github.com/newrelic/nr1-field-viz.git
+cd /nr1-field-viz/visualizations
 nr1 nerdpack:serve
 ```
 
@@ -80,8 +77,12 @@ nr1 nerdpack:publish [--profile=your_profile_name]
 nr1 nerdpack:deploy [-c [DEV|BETA|STABLE]] [--profile=your_profile_name]
 nr1 nerdpack:subscribe [-c [DEV|BETA|STABLE]] [--profile=your_profile_name]
 ```
-
-Visit [https://one.newrelic.com](https://one.newrelic.com), and launch your app in New Relic.
+## Using this Nerdpack
+- Visit [https://one.newrelic.com](https://one.newrelic.com), and launch your app in New Relic.
+- Enter Chart Name, Account ID, Query, and Select a Chart Type
+- Do not include any time ranges when entering the query. The nerdpack will update query when time range is changed. 
+- Add to Dashboard
+- Test different time ranges. 
 
 # Support
 
