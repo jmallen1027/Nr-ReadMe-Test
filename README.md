@@ -65,8 +65,6 @@ Visit [https://one.newrelic.com/?nerdpacks=local](https://one.newrelic.com/?nerd
 
 ## Deploying this Nerdpack
 
-> Include the necessary steps to deploy your app. Generally, you shouldn't need to change any of these steps. 
-
 Open a command prompt in the app's directory and run the following commands.
 
 ```bash
@@ -92,11 +90,9 @@ We encourage you to bring your experiences and questions to the [Explorers Hub](
 
 ## Community
 
-> Work with the Explorer's Hub team to create a tag for your app, then update the link below.
-
 New Relic hosts and moderates an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub. You can find this project's topic/threads here:
 
-https://discuss.newrelic.com/t/{{ APP_NAME }}
+https://discuss.newrelic.com/t/nr1-field-viz
 *(Note: This URL is subject to change before GA)*
 
 ## Issues / enhancement requests
@@ -104,8 +100,6 @@ https://discuss.newrelic.com/t/{{ APP_NAME }}
 Issues and enhancement requests can be submitted in the [Issues tab of this repository](../../issues). Please search for and review the existing open issues before submitting a new issue.
 
 # Contributing
-
-> Work with the Open Source Office to update the email alias below.
 
 Contributions are encouraged! If you submit an enhancement request, we'll invite you to contribute the change yourself. Please review our [Contributors Guide](CONTRIBUTING.md).
 
