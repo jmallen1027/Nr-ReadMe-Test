@@ -10,7 +10,7 @@ Seamless integration: Provides an experience similar to what you enjoy in New Re
 
 Efficient data handling: Optimizes query performance to prevent timeouts, ensuring that all charts and data visualizations load correctly and promptly.
 
-Flexible Query Management: Helps you handle long-running queries effectively, breaking them down into manageable parts to ensure complete data retrieval without performance issues.
+Flexible query management: Helps you handle long-running queries effectively, breaking them down into manageable parts to ensure complete data retrieval without performance issues.
 
 With this app, you can build comprehensive and responsive dashboards. You can also maintain the quality and reliability of your data visualizations even with complex and extensive queries.
 
@@ -47,10 +47,10 @@ Complete the following to run the NerdPack locally:
 1. Ensure that you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [NPM](https://www.npmjs.com/get-npm) installed.
     * If you're unsure whether you have one or both of them installed, run the following commands.
     * If you have them installed, these commands return a version number; if not, the commands aren't recognized.
-    ```bash
-    git --version
-    npm -v
-    ```
+      ```bash
+      git --version
+      npm -v
+      ```
 2. Install the [NR1 CLI](https://one.newrelic.com/launcher/developer-center.launcher) by going to [the developer center](https://one.newrelic.com/launcher/developer-center.launcher) and following the instructions to install and set up your New Relic development environment. This should take about five minutes.
 3. Execute the following command to clone this repository and run the code locally against your New Relic data:
 
@@ -78,7 +78,7 @@ nr1 nerdpack:subscribe [-c [DEV|BETA|STABLE]] [--profile=your_profile_name]
 - Visit [https://one.newrelic.com](https://one.newrelic.com), and launch your app in New Relic.
 - Enter values for the chart name, account ID, query, and then select a chart type.
 - Do not include any time ranges when entering the query. The nerdpack will update query when the time range is changed. 
-- Add to Dashboard.
+- Add to dashboard.
 - Test different time ranges. 
 
 # Support
