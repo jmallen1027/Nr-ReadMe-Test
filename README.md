@@ -6,16 +6,13 @@ This application addresses a common issue faced by users when creating dashboard
 
 ### Key features include:
 
-Seamless Integration: 
-- Provides a user-friendly experience similar to what users enjoy in New Relic, making it easy to create and manage dashboard panels.
+Seamless integration: Provides an experience similar to what you enjoy in New Relic, making it easy for you to create and manage dashboard panels.
 
-Efficient Data Handling: 
-- Optimizes query performance to prevent timeouts, ensuring that all charts and data visualizations load correctly and promptly.
+Efficient data handling: Optimizes query performance to prevent timeouts, ensuring that all charts and data visualizations load correctly and promptly.
 
-Flexible Query Management: 
-- Allows users to handle long-running queries effectively, breaking them down into manageable parts to ensure complete data retrieval without performance issues.
+Flexible query management: Helps you handle long-running queries effectively, breaking them down into manageable parts to ensure complete data retrieval without performance issues.
 
-With this app, users can build comprehensive and responsive dashboards, maintaining the quality and reliability of their data visualizations even with complex and extensive queries.
+With this app, you can build comprehensive and responsive dashboards. You can also maintain the quality and reliability of your data visualizations even with complex and extensive queries.
 
 ![Screenshot #1](/screenshot_01.png)
 ![Screenshot #2](/screenshot_02.png)
@@ -30,12 +27,12 @@ This project is distributed under the [Apache 2 license](LICENSE).
 Required:
 
 - New Relic Account
-- Must be a Full or Core User in order to use and visualize NR1 Nerdpacks
+- Must be a full or core user in order to use and visualize NR1 Nerdpacks
 
 Good to have:
 
 - Experience with New Relic NRQL
-- Experience with NR1 CLI
+- Experience with the NR1 CLI
 
 Resources 
 
@@ -45,41 +42,43 @@ Resources
 
 ## Getting started
 
-> Include a step-by-step procedure on how to get your app installed and deployed. The clone and deploy steps are similar across all apps. If your app has additional steps required to get started, include them here or in their own section.
+Complete the following to run the NerdPack locally:
 
-1. Ensure that you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [NPM](https://www.npmjs.com/get-npm) installed. If you're unsure whether you have one or both of them installed, run the following commands. (If you have them installed, these commands return a version number; if not, the commands aren't recognized.)
-```bash
-git --version
-npm -v
-```
-2. Install the [NR1 CLI](https://one.newrelic.com/launcher/developer-center.launcher) by going to [the developer center](https://one.newrelic.com/launcher/developer-center.launcher), and following the instructions to install and set up your New Relic development environment. This should take about 5 minutes.
+1. Ensure that you have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [NPM](https://www.npmjs.com/get-npm) installed.
+    * If you're unsure whether you have one or both of them installed, run the following commands.
+    * If you have them installed, these commands return a version number; if not, the commands aren't recognized.
+      ```bash
+      git --version
+      npm -v
+      ```
+2. Install the [NR1 CLI](https://one.newrelic.com/launcher/developer-center.launcher) by going to [the developer center](https://one.newrelic.com/launcher/developer-center.launcher) and following the instructions to install and set up your New Relic development environment. This should take about five minutes.
 3. Execute the following command to clone this repository and run the code locally against your New Relic data:
 
-```bash
-nr1 nerdpack:clone -r https://github.com/newrelic/nr1-field-viz.git
-cd /nr1-field-viz/visualizations
-nr1 nerdpack:serve
-```
+    ```bash
+    nr1 nerdpack:clone -r https://github.com/newrelic/nr1-field-viz.git
+    cd /nr1-field-viz/visualizations
+    nr1 nerdpack:serve
+    ```
 
 Visit [https://one.newrelic.com/?nerdpacks=local](https://one.newrelic.com/?nerdpacks=local) to launch your app locally. 
 
 ## Deploying this Nerdpack
 
-Open a command prompt in the app's directory and run the following commands.
+Open a command prompt in the app's directory (`/nr1-field-viz/visualizations`) and run the following commands, replacing the placeholders with your information:
 
 ```bash
-# If you need to create a new uuid for the account to which you're deploying this app, use the following
+# If you need to create a new uuid for the account to which you're deploying this app, uncomment the next line and run it:
 # nr1 nerdpack:uuid -g [--profile=your_profile_name]
-# to see a list of APIkeys / profiles available in your development environment, run nr1 credentials:list
+# To see a list of APIkeys / profiles available in your development environment, run nr1 credentials:list
 nr1 nerdpack:publish [--profile=your_profile_name]
 nr1 nerdpack:deploy [-c [DEV|BETA|STABLE]] [--profile=your_profile_name]
 nr1 nerdpack:subscribe [-c [DEV|BETA|STABLE]] [--profile=your_profile_name]
 ```
 ## Using this Nerdpack
 - Visit [https://one.newrelic.com](https://one.newrelic.com), and launch your app in New Relic.
-- Enter Chart Name, Account ID, Query, and Select a Chart Type
-- Do not include any time ranges when entering the query. The nerdpack will update query when time range is changed. 
-- Add to Dashboard
+- Enter values for the chart name, account ID, query, and then select a chart type.
+- Do not include any time ranges when entering the query. The nerdpack will update query when the time range is changed. 
+- Add to dashboard.
 - Test different time ranges. 
 
 # Support
@@ -92,8 +91,7 @@ We encourage you to bring your experiences and questions to the [Explorers Hub](
 
 New Relic hosts and moderates an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub. You can find this project's topic/threads here:
 
-https://discuss.newrelic.com/t/nr1-field-viz
-*(Note: This URL is subject to change before GA)*
+https://discuss.newrelic.com/t/nr1-field-viz (Note that this URL is subject to change before GA)
 
 ## Issues / enhancement requests
 
